@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WaiterClient</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_name">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="remember_password">记住密码</string>
+    <string name="old_password">请输入原密码</string>
+    <string name="new_password">请输入新密码</string>
+    <string name="new_password2">请再次输入新密码</string>
+    <string name="first_login_modify_password_notice">尊敬的用户，这是您首次登陆，请修改密码！！</string>
+    <string name="exit">退出</string>
+    <string name="exit_dialog_message">你确定要退出吗？</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="table_num">桌号</string>
+    <string name="dishes_classes">菜类</string>
+    <string name="dishes_notice">菜品介绍</string>
+
+    <string-array name="dishes_classes_array">
+        <item>主食</item>
+        <item>凉菜</item>
+        <item>汤羹</item>
+        <item>热菜</item>
+        <item>餐具</item>
+        <item>饮品</item>
+    </string-array>
+    <string-array name="dishes_main_classes">
+        <item>米饭</item>
+        <item>米饭</item>
+        <item>米饭</item>
+        <item>米饭</item>
+        <item>米饭</item>
+    </string-array>
+    <string-array name="dishes_cold_classes">
+        <item>凉拌黄瓜</item>
+        <item>凉拌黄瓜</item>
+        <item>凉拌黄瓜</item>
+        <item>凉拌黄瓜</item>
+        <item>凉拌黄瓜</item>
+    </string-array>
+    <string-array name="dishes_soup_classes">
+        <item>七彩干贝汤</item>
+        <item>七彩干贝汤</item>
+        <item>七彩干贝汤</item>
+        <item>七彩干贝汤</item>
+        <item>七彩干贝汤</item>
+    </string-array>
+    <string-array name="dishes_hot_classes">
+        <item>水煮活鱼</item>
+        <item>水煮活鱼</item>
+        <item>水煮活鱼</item>
+        <item>水煮活鱼</item>
+        <item>水煮活鱼</item>
+    </string-array>
+    <string-array name="dishes_classes">
+        <item>碗筷</item>
+        <item>碗筷</item>
+        <item>碗筷</item>
+        <item>碗筷</item>
+        <item>碗筷</item>
+    </string-array>
+    <string-array name="dishes_drink_classes">
+        <item>啤酒</item>
+        <item>啤酒</item>
+        <item>啤酒</item>
+        <item>啤酒</item>
+        <item>啤酒</item>
+    </string-array>
+
+    <string name="brower_order_tv">"尊敬的客户，你的流水号是： "</string>
+
+    <string name="dishes_no">序号</string>
+    <string name="dishes_name">菜名</string>
+    <string name="dishes_unit_prices">单价</string>
+    <string name="dishes_num">数量</string>
+    <string name="dishes_total_prices">价格</string>
+    <string name="dishes_remark">备注</string>
+    <string name="dishes_category">种类</string>
+    <string name="dishes_delete">删除</string>
+</resources>

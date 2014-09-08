@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_brower_order_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/dishes_no"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_brower_order_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/dishes_name"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_brower_order_unitPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/dishes_unit_prices"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btn_brower_order_subNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_arrows_left_1" />
+
+    <TextView
+        android:id="@+id/tv_brower_order_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/dishes_num"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btn_brower_order_addNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_arrows_right_1" />
+
+    <TextView
+        android:id="@+id/tv_brower_order_prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/dishes_total_prices"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btn_brower_order_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/note" />
+
+    <TextView
+        android:id="@+id/tv_brower_order_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/dishes_category"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btn_brower_order_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/delete" />
+
+</LinearLayout>
