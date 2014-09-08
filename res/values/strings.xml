@@ -82,4 +82,8 @@
     <string name="brower_order_delete_message">你确定要删除</string>
     <string name="confirm_order_title">确认提交订单</string>
    
+    <string name="checkout_date">日期：</string>
+    <string name="serialNum">流水号</string>
+    <string name="selected">选择</string>
+    
 </resources>

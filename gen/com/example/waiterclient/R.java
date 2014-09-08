@@ -121,7 +121,7 @@ public final class R {
         public static final int zicaitang=0x7f020058;
     }
     public static final class id {
-        public static final int action_settings=0x7f09002f;
+        public static final int action_settings=0x7f090037;
         public static final int btn_brower_order_addNum=0x7f090015;
         public static final int btn_brower_order_back=0x7f09000e;
         public static final int btn_brower_order_confirm=0x7f09000f;
@@ -129,14 +129,16 @@ public final class R {
         public static final int btn_brower_order_note=0x7f090017;
         public static final int btn_brower_order_subNum=0x7f090013;
         public static final int btn_login=0x7f090003;
+        public static final int checkout_linerlayout_01=0x7f09001e;
         public static final int dishes_layout=0x7f09000c;
-        public static final int dishes_list_checkbox=0x7f090021;
-        public static final int dishes_list_tv=0x7f090020;
-        public static final int linearLayout1=0x7f090022;
+        public static final int dishes_list_checkbox=0x7f090029;
+        public static final int dishes_list_tv=0x7f090028;
+        public static final int linearLayout1=0x7f09002a;
         public static final int list_brower_order=0x7f09000d;
+        public static final int list_checkout=0x7f09001f;
         public static final int login_check=0x7f090002;
         public static final int login_name=0x7f090000;
-        public static final int login_name_tv=0x7f09001b;
+        public static final int login_name_tv=0x7f090023;
         public static final int login_password=0x7f090001;
         public static final int main_menu_add_order=0x7f090008;
         public static final int main_menu_checkout=0x7f090006;
@@ -144,21 +146,22 @@ public final class R {
         public static final int main_menu_more=0x7f090009;
         public static final int main_menu_order=0x7f090005;
         public static final int main_menu_order_schedule=0x7f090007;
-        public static final int modify_new_password=0x7f09001d;
-        public static final int modify_new_password2=0x7f09001e;
-        public static final int modify_old_password=0x7f09001c;
-        public static final int modify_password_notice=0x7f09001a;
-        public static final int modify_save=0x7f09001f;
-        public static final int order_dishes_List=0x7f09002d;
-        public static final int order_dishes_iv=0x7f090029;
-        public static final int order_dishes_name=0x7f09002a;
-        public static final int order_dishes_notices=0x7f09002c;
-        public static final int order_dishes_price=0x7f09002b;
-        public static final int order_menu_order=0x7f09002e;
-        public static final int order_spinner_dishclasses=0x7f090027;
-        public static final int order_spinner_table_num=0x7f090024;
-        public static final int scrollView1=0x7f090028;
-        public static final int spiner_dishes_layout=0x7f090025;
+        public static final int modify_new_password=0x7f090025;
+        public static final int modify_new_password2=0x7f090026;
+        public static final int modify_old_password=0x7f090024;
+        public static final int modify_password_notice=0x7f090022;
+        public static final int modify_save=0x7f090027;
+        public static final int order_dishes_List=0x7f090035;
+        public static final int order_dishes_iv=0x7f090031;
+        public static final int order_dishes_name=0x7f090032;
+        public static final int order_dishes_notices=0x7f090034;
+        public static final int order_dishes_price=0x7f090033;
+        public static final int order_menu_order=0x7f090036;
+        public static final int order_spinner_dishclasses=0x7f09002f;
+        public static final int order_spinner_table_num=0x7f09002c;
+        public static final int rbtn_checkout_item=0x7f090021;
+        public static final int scrollView1=0x7f090030;
+        public static final int spiner_dishes_layout=0x7f09002d;
         public static final int tv_brower_order01=0x7f09000a;
         public static final int tv_brower_order_No=0x7f09000b;
         public static final int tv_brower_order_category=0x7f090018;
@@ -167,17 +170,24 @@ public final class R {
         public static final int tv_brower_order_num=0x7f090014;
         public static final int tv_brower_order_prices=0x7f090016;
         public static final int tv_brower_order_unitPrice=0x7f090012;
-        public static final int tv_dishes_classes=0x7f090026;
-        public static final int tv_table_num=0x7f090023;
+        public static final int tv_checkout_01=0x7f09001a;
+        public static final int tv_checkout_02=0x7f09001d;
+        public static final int tv_checkout_date=0x7f09001b;
+        public static final int tv_checkout_item=0x7f090020;
+        public static final int tv_checkout_tableNum=0x7f09001c;
+        public static final int tv_dishes_classes=0x7f09002e;
+        public static final int tv_table_num=0x7f09002b;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
         public static final int activity_main_menu=0x7f030001;
         public static final int brower_order=0x7f030002;
         public static final int brower_order_list_item=0x7f030003;
-        public static final int modify_password=0x7f030004;
-        public static final int order_dishes_list_item=0x7f030005;
-        public static final int order_menu=0x7f030006;
+        public static final int checkout=0x7f030004;
+        public static final int checkout_item=0x7f030005;
+        public static final int modify_password=0x7f030006;
+        public static final int order_dishes_list_item=0x7f030007;
+        public static final int order_menu=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -188,6 +198,7 @@ public final class R {
         public static final int brower_order_delete_message=0x7f050019;
         public static final int brower_order_tv=0x7f050010;
         public static final int cancel=0x7f05000c;
+        public static final int checkout_date=0x7f05001b;
         public static final int confirm=0x7f05000b;
         public static final int confirm_order_title=0x7f05001a;
         public static final int dishes_category=0x7f050017;
@@ -209,6 +220,8 @@ public final class R {
         public static final int new_password2=0x7f050007;
         public static final int old_password=0x7f050005;
         public static final int remember_password=0x7f050004;
+        public static final int selected=0x7f05001d;
+        public static final int serialNum=0x7f05001c;
         public static final int table_num=0x7f05000d;
     }
     public static final class style {
