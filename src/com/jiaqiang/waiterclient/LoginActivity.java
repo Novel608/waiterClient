@@ -63,6 +63,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 			login_name.setText(name);
 			if (name != null || !name.equals(""))
 				isFirstLogin = false;
+			rememberPassword.setChecked(true);
 			password_edit.setText(preferences.getString("password", ""));
 		}
 	}
