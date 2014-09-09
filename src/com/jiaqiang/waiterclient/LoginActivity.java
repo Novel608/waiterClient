@@ -1,6 +1,19 @@
 package com.jiaqiang.waiterclient;
 
+import java.io.IOException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.example.waiterclient.R;
+import com.jiaqiang.waiterclient.entity.StrictModeUtil;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -14,6 +27,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends Activity implements OnClickListener {
 
@@ -36,7 +50,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 	 * 
 	 */
 	private void init() {
-
+		StrictModeUtil.getStrictModeUtil();
 		login_name = (EditText) findViewById(R.id.login_name);
 		password_edit = (EditText) findViewById(R.id.login_password);
 		rememberPassword = (CheckBox) findViewById(R.id.login_check);
@@ -49,9 +63,45 @@ public class LoginActivity extends Activity implements OnClickListener {
 			login_name.setText(name);
 			if (name != null || !name.equals(""))
 				isFirstLogin = false;
+			rememberPassword.setChecked(true);
 			password_edit.setText(preferences.getString("password", ""));
 		}
+	}
 
+	private boolean loginSystem(String userName, String password) {
+		HttpClient httpClient = new DefaultHttpClient();
+		String urlStr = StrictModeUtil.IPADRESS
+				+ "/GourmetOrderServer/loginServlet?name=" + userName + "&paw="
+				+ password + "&category=user";
+		HttpGet httpGet = new HttpGet(urlStr);
+		try {
+			HttpResponse httpResponse = httpClient.execute(httpGet);
+			if (httpResponse.getStatusLine().getStatusCode() == 200) {
+				HttpEntity httpEntity = httpResponse.getEntity();
+				String entity = EntityUtils.toString(httpEntity);
+				try {
+					JSONObject jsonObject = new JSONObject(entity);
+					String returnWord = jsonObject.getString("rt");
+					if (returnWord.equals("200")) {
+						return true;
+					}
+				} catch (JSONException e) {
+					e.printStackTrace();
+				}
+			}
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	
+	
+
+	private void showToast(String text) {
+		Toast.makeText(this, text, Toast.LENGTH_LONG).show();
 	}
 
 	@Override
@@ -64,15 +114,19 @@ public class LoginActivity extends Activity implements OnClickListener {
 						ModifyPasswordActivity.class);
 				intent.putExtra("loginName", name);
 				startActivity(intent);
+				LoginActivity.this.finish();
 			} else {
-				Intent intent = new Intent(LoginActivity.this,
-						MainMenuActivity.class);
-				startActivity(intent);
+				if (loginSystem(login_name.getText().toString(), password_edit
+						.getText().toString())) {
+					showToast("登陆成功");
+					Intent intent = new Intent(LoginActivity.this,
+							MainMenuActivity.class);
+					startActivity(intent);
+					LoginActivity.this.finish();
+				} else {
+					showToast("用户名或密码输入错误！");
+				}
 			}
-			LoginActivity.this.finish();
-			break;
-
-		default:
 			break;
 		}
 	}

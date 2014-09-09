@@ -195,12 +195,10 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int brower_order_delete_message=0x7f050019;
         public static final int brower_order_tv=0x7f050010;
         public static final int cancel=0x7f05000c;
-        public static final int checkout_date=0x7f05001b;
+        public static final int checkout_date=0x7f050019;
         public static final int confirm=0x7f05000b;
-        public static final int confirm_order_title=0x7f05001a;
         public static final int dishes_category=0x7f050017;
         public static final int dishes_classes=0x7f05000e;
         public static final int dishes_delete=0x7f050018;
@@ -220,8 +218,8 @@ public final class R {
         public static final int new_password2=0x7f050007;
         public static final int old_password=0x7f050005;
         public static final int remember_password=0x7f050004;
-        public static final int selected=0x7f05001d;
-        public static final int serialNum=0x7f05001c;
+        public static final int selected=0x7f05001b;
+        public static final int serialNum=0x7f05001a;
         public static final int table_num=0x7f05000d;
     }
     public static final class style {

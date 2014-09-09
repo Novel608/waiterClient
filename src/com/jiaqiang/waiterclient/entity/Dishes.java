@@ -6,20 +6,10 @@ public class Dishes {
 	private int no;// 菜式编号
 	private String dishesName;// 菜单名称
 	private String dishesCategory;// 菜单类别
-	private double dishesUnitPrice;// 菜式价格
+	private double dishesPrice;// 菜式价格
 	private String photo;// 菜式图片
 	private String dishesNotice;// 菜式描述
 	private String dishesUnit;// 菜式单位
-	private int dishesNum;//数量
-	
-
-	public int getDishesNum() {
-		return dishesNum;
-	}
-
-	public void setDishesNum(int dishesNum) {
-		this.dishesNum = dishesNum;
-	}
 
 	public int get_id() {
 		return _id;
@@ -53,22 +43,12 @@ public class Dishes {
 		this.dishesCategory = dishesClass;
 	}
 
-	
-
-	public String getDishesCategory() {
-		return dishesCategory;
+	public double getDishesPrice() {
+		return dishesPrice;
 	}
 
-	public void setDishesCategory(String dishesCategory) {
-		this.dishesCategory = dishesCategory;
-	}
-
-	public double getDishesUnitPrice() {
-		return dishesUnitPrice;
-	}
-
-	public void setDishesUnitPrice(double dishesUnitPrice) {
-		this.dishesUnitPrice = dishesUnitPrice;
+	public void setDishesPrice(double dishesPrice) {
+		this.dishesPrice = dishesPrice;
 	}
 
 	public String getPhoto() {

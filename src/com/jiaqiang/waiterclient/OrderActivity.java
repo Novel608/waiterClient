@@ -8,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -23,9 +21,9 @@ import com.example.waiterclient.R;
 
 public class OrderActivity extends Activity {
 
-	private Spinner spnr_tableNum;//桌号所对应的spinner
-	private Spinner spnr_dishesclass;//菜类所对应到额spinner
-	private ExpandableListView dishes_list;//可扩展Listview
+	private Spinner spnr_tableNum;
+	private Spinner spnr_dishesclass;
+	private ExpandableListView dishes_list;
 	private ImageView dishes_iv;
 	private TextView tv_dishes_name;
 	private TextView tv_dishes_price;
@@ -48,9 +46,6 @@ public class OrderActivity extends Activity {
 	}
 
 	private void init() {
-		/*
-		 * 获取相应的字符串数据的值
-		 */
 		groupStringArray = getResources().getStringArray(
 				R.array.dishes_classes_array);
 		for (int i = 0; i < groupStringArray.length; i++) {
@@ -66,11 +61,7 @@ public class OrderActivity extends Activity {
 		dishes_list = (ExpandableListView) findViewById(R.id.order_dishes_List);
 		dishes_list.setGroupIndicator(null);
 		dishes_list.setAdapter(new MyExplandListAdapater());
-
 		btn_order = (Button) findViewById(R.id.order_menu_order);
-		/*
-		 * 点击点菜按钮的时候跳转到订单界面
-		 */
 		btn_order.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -81,56 +72,8 @@ public class OrderActivity extends Activity {
 			}
 		});
 
-		spinneritemSelected();
-
 	}
 
-	/**
-	 * 点击spinner的时候相应的ItemSelectedListener
-	 */
-	private void spinneritemSelected() {
-		/*
-		 * 菜类所对应的itemselectedlistener
-		 */
-		spnr_dishesclass
-				.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-					@Override
-					public void onItemSelected(AdapterView<?> parent,
-							View view, int position, long id) {
-
-					}
-
-					@Override
-					public void onNothingSelected(AdapterView<?> parent) {
-
-					}
-				});
-		/*
-		 * 点击桌号的时候，相应的点击事件
-		 */
-		spnr_tableNum.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-			@Override
-			public void onItemSelected(AdapterView<?> parent, View view,
-					int position, long id) {
-
-			}
-
-			@Override
-			public void onNothingSelected(AdapterView<?> parent) {
-
-			}
-		});
-
-	}
-
-	/**
-	 * 可扩展适配器
-	 * 
-	 * @author Novel
-	 * 
-	 */
 	class MyExplandListAdapater extends BaseExpandableListAdapter {
 
 		@Override

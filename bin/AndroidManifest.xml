@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -35,12 +36,8 @@
             android:name="com.jiaqiang.waiterclient.OrderActivity"
             android:screenOrientation="landscape" >
         </activity>
-        <activity
+         <activity
             android:name="com.jiaqiang.waiterclient.BrowerOrderActivity"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name="com.jiaqiang.waiterclient.CheckoutActivity"
             android:screenOrientation="landscape" >
         </activity>
     </application>
