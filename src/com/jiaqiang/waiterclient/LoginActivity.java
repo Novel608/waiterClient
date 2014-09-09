@@ -50,7 +50,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 	 * 
 	 */
 	private void init() {
-		StrictModeUtil.getStrictModeUtil();
+//		StrictModeUtil.getStrictModeUtil();
 		login_name = (EditText) findViewById(R.id.login_name);
 		password_edit = (EditText) findViewById(R.id.login_password);
 		rememberPassword = (CheckBox) findViewById(R.id.login_check);
