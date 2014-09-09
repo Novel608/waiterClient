@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_table_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/table_num"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/order_spinner_table_num"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/tv_table_num"
+            android:background="@drawable/explist_click"
+            android:prompt="@string/table_num" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spiner_dishes_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_dishes_classes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/dishes_classes"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/order_spinner_dishclasses"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/explist_click"
+            android:prompt="@string/dishes_classes" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp" >
+
+            <ImageView
+                android:id="@+id/order_dishes_iv"
+                android:layout_width="380dp"
+                android:layout_height="300dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/gallery1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/order_dishes_iv"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/order_dishes_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:maxWidth="80dp"
+                    android:text="12222222"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/order_dishes_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20.0"
+                    android:textColor="#693"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_dishes_iv"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dishes_notice"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/order_dishes_notices"
+                    android:layout_width="394dp"
+                    android:layout_height="85dp"
+                    android:maxWidth="150dp"
+                    android:text="121212222222222222222"
+                    android:textColor="#033"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+ 
+
+    <ExpandableListView
+        android:id="@+id/order_dishes_List"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/spiner_dishes_layout"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@id/scrollView1" >
+    </ExpandableListView>
+
+    <Button
+        android:id="@+id/order_menu_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_order" />
+
+</RelativeLayout>
