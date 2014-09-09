@@ -40,6 +40,10 @@
             android:name="com.jiaqiang.waiterclient.BrowerOrderActivity"
             android:screenOrientation="landscape" >
         </activity>
+        <activity
+            android:name="com.jiaqiang.waiterclient.CheckoutActivity"
+            android:screenOrientation="landscape" >
+        </activity>
     </application>
 
 </manifest>

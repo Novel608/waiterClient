@@ -131,7 +131,7 @@ public class MainMenuActivity extends Activity implements OnClickListener {
 
 			break;
 		case R.id.main_menu_checkout:
-
+			intent = new Intent(MainMenuActivity.this, CheckoutActivity.class);
 			break;
 		case R.id.main_menu_more:
 
